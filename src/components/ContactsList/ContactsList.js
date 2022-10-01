@@ -1,7 +1,6 @@
 import React from "react";
 import { Box } from "components/Box"
 import { useDispatch, useSelector } from "react-redux";
-// import { remove } from "redux/contactsSlice/slice";
 import { getFilter, getItems } from "redux/selector";
 import { removeItem } from "redux/operations";
 

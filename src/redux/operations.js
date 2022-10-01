@@ -1,5 +1,3 @@
-// https://6336bb015327df4c43c82af1.mockapi.io/
-
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 

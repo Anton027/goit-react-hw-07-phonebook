@@ -10,4 +10,6 @@ export const add = createAction('items/add', ({name,number}) => {
     }
 });
 
-export const remove = createAction('items/remove');
+export const remove = createAction('items/remove', () => {
+    return 
+});

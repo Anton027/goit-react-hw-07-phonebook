@@ -38,14 +38,13 @@ export const itemsSlice = createSlice({
             state.items.push(action.payload)
         },
         [addItem.rejected]: handleRejected,
-        
 // ============ removeItem =====================
         [removeItem.pending]: handlePending,
         [removeItem.fulfilled](state, action) {
             state.isLoading = false;
             state.error = null;
             const idx = state.items.findIndex(item => item.id === action.payload.id)
-            state.items.slice(idx, 1);
+            state.items.splice(idx, 1);
         },
         [removeItem.rejected]: handleRejected,
     }
